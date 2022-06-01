@@ -23,13 +23,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "eslint",
-      "git add"
-    ]
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [

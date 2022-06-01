@@ -27,7 +27,7 @@
     "rules": {
         "@typescript-eslint/quotes": [
             "warn",
-            "single"
+            "double"
         ],
         "react/jsx-uses-react": [
             "off"
