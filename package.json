@@ -24,7 +24,17 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare": "husky install"
+    "precommit": "husky install"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint .",
+      "git add"
+    ],
+    "**/*.scss": [
+      "stylelint **/*.scss",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -54,7 +64,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.1",
     "sass": "^1.52.1",
     "stylelint-order": "^5.0.0"
   }
