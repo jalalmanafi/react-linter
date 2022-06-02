@@ -30,7 +30,7 @@
     "*.{js,jsx,ts,tsx}": [
       "eslint ."
     ],
-    "*.scss": "stylelint"
+    "*.scss": "stylelint ."
   },
   "eslintConfig": {
     "extends": [
