@@ -21,9 +21,40 @@
     },
     "plugins": [
         "react",
+        "import",
         "@typescript-eslint"
     ],
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [
+                ".ts",
+                ".tsx"
+            ]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true,
+                "project": "packages/*/tsconfig.json"
+            }
+        }
+    },
     "rules": {
+        "import/no-unresolved": "error",
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    "external",
+                    "index",
+                    "sibling",
+                    "parent",
+                    "internal",
+                    "builtin",
+                    "object",
+                    "type"
+                ]
+            }
+        ],
         "@typescript-eslint/quotes": [
             "warn",
             "double"
