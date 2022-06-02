@@ -28,12 +28,10 @@
   },
   "lint-staged": {
     "**/*.js": [
-      "eslint .",
-      "git add"
+      "eslint ."
     ],
     "**/*.scss": [
-      "stylelint **/*.scss",
-      "git add"
+      "stylelint **/*.scss"
     ]
   },
   "eslintConfig": {
