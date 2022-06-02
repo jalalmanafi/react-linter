@@ -1,14 +1,16 @@
 {
-    "plugins": [
-      "stylelint-scss"
-    ],
     "rules": {
-      // recommended rules
-      "at-rule-no-unknown": null,
-      "scss/at-rule-no-unknown": true,
-      // any other rules you'd want to change e.g.
-      "scss/dollar-variable-pattern": "^foo",
-      "scss/selector-no-redundant-nesting-selector": true,
-      "color-no-invalid-hex": true
+        "no-eol-whitespace": true,
+        "no-extra-semicolons": true,
+        "no-invalid-double-slash-comments": true,
+        "declaration-block-no-duplicate-properties": true,
+        "max-empty-lines": 2,
+        "color-no-invalid-hex": true,
+        "unit-allowed-list": [
+            "px",
+            "em",
+            "vh",
+            "%"
+        ]
     }
-  }
+}
