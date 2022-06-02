@@ -27,10 +27,9 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
+    "src/*.{js,jsx,ts,tsx}": [
       "eslint ."
-    ],
-    "*.scss": "stylelint ."
+    ]
   },
   "eslintConfig": {
     "extends": [
