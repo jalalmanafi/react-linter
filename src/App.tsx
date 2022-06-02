@@ -61,7 +61,8 @@ function App() {
         s dolorum tenetur autem unde ipsam, debitis similique hi
         c dolores maxime sint nesciunt, impedit rerum et natus molestias amet explicab
         o iure reprehenderit provident harum pariatur culpa ducimus earum! Quam,
-        sit maiores dolor in aspernatur eaque deleniti soluta.
+        sit maiores dolor in aspernatur eaque deleniti
+        soluta.
       </main>
       <footer>Footer</footer>
     </div>
