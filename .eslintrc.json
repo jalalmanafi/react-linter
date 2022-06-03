@@ -1,78 +1,80 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "react-app",
-        "react-app/jest",
-        "airbnb",
-        "airbnb-typescript",
-        "plugin:import/typescript"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module",
-        "project": "./tsconfig.json"
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "import",
+    "@typescript-eslint"
+  ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
     },
-    "plugins": [
-        "react",
-        "import",
-        "@typescript-eslint"
-    ],
-    "settings": {
-        "import/parsers": {
-            "@typescript-eslint/parser": [
-                ".ts",
-                ".tsx"
-            ]
-        },
-        "import/resolver": {
-            "typescript": {
-                "alwaysTryTypes": true,
-                "project": "packages/*/tsconfig.json"
-            }
-        }
-    },
-    "rules": {
-        "import/no-unresolved": "error",
-        "import/order": [
-            "error",
-            {
-                "groups": [
-                    "external",
-                    "index",
-                    "sibling",
-                    "parent",
-                    "internal",
-                    "builtin",
-                    "object",
-                    "type"
-                ]
-            }
-        ],
-        "@typescript-eslint/quotes": [
-            "warn",
-            "double"
-        ],
-        "react/jsx-uses-react": [
-            "off"
-        ],
-        "react/react-in-jsx-scope": [
-            "off"
-        ],
-        "react/jsx-props-no-spreading": [
-            "warn"
-        ],
-        "@typescript-eslint/no-shadow": "off",
-        "no-console": "off",
-        "indent": [
-            "error",
-            2
-        ]
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "packages/*/tsconfig.json"
+      }
     }
+  },
+  "rules": {
+    "import/no-unresolved": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "external",
+          "index",
+          "sibling",
+          "parent",
+          "internal",
+          "builtin",
+          "object",
+          "type"
+        ]
+      }
+    ],
+    "@typescript-eslint/quotes": [
+      "warn",
+      "double"
+    ],
+    "react/jsx-uses-react": [
+      "off"
+    ],
+    "react/react-in-jsx-scope": [
+      "off"
+    ],
+    "react/jsx-props-no-spreading": [
+      "warn"
+    ],
+    "@typescript-eslint/no-shadow": "off",
+    "no-console": "off",
+    "indent": [
+      "error",
+      2
+    ],
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": "off"
+  }
 }

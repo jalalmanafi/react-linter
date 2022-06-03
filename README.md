@@ -11,7 +11,7 @@
 - https://www.youtube.com/watch?v=ZXW6Jn6or1w
 
 
- 
+
 ### Documentation and SublimeText configuration for eslint-plugin-import and eslint-import-resolver-typescript :
 
 https://github.com/import-js/eslint-plugin-import#sublimelinter-eslint
