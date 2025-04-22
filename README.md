@@ -15,3 +15,8 @@
 ### Documentation and SublimeText configuration for eslint-plugin-import and eslint-import-resolver-typescript :
 
 https://github.com/import-js/eslint-plugin-import#sublimelinter-eslint
+
+
+# NOTE
+
+The ESLint configuration rules need to be completely reset and reconfigured again to address the current issues.
